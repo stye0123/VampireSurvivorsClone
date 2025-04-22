@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+//用途：統計管理器，可以統計遊戲數據
 namespace Vampire
 {
     public class StatsManager : MonoBehaviour

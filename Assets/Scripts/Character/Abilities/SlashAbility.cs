@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：揮砍技能，可以揮砍怪物
 namespace Vampire
 {
     public class SlashAbility : MeleeAbility

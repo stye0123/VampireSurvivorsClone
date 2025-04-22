@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：空間哈希網格，可以空間哈希網格
 public interface ISpatialHashGridClient
 {
     Vector2 Position { get; }

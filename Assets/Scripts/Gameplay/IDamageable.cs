@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：可受傷害，可以受到傷害
 namespace Vampire
 {
     public abstract class IDamageable : MonoBehaviour

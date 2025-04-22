@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Linq;
 using System.Collections;
 using UnityEngine;
-
+//用途：充電老闆能力，可以充電
 namespace Vampire
 {
     public class ChargeBossAbility : BossAbility

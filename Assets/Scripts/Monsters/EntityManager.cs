@@ -6,61 +6,61 @@ using System.Collections.Generic;
 
 namespace Vampire
 {
-    /// <summary>
-    /// Manager class for monsters, monster-dependent objects such as exp gems and coins, chests etc.
-    /// </summary>
+
+    /// 負責管理怪物、怪物依賴的物體，如經驗寶石和硬幣、寶箱等。
     public class EntityManager : MonoBehaviour
     {
         [Header("Monster Spawning Settings")]
-        [SerializeField] private float monsterSpawnBufferDistance;  // Extra distance outside of the screen view at which monsters should be spawned
-        [SerializeField] private float playerDirectionSpawnWeight;  // How much do we weight the player's movement direction in the spawning of monsters
+        [SerializeField] private float monsterSpawnBufferDistance;  // 在屏幕視圖之外的額外距離，在此處怪物應該被生成
+        [SerializeField] private float playerDirectionSpawnWeight;  // 我們在生成怪物時如何權重玩家的移動方向
         [Header("Chest Spawning Settings")]
-        [SerializeField] private  float chestSpawnRange = 5;
+        [SerializeField] private  float chestSpawnRange = 5; // 寶箱的生成範圍
         [Header("Object Pool Settings")]
-        [SerializeField] private GameObject monsterPoolParent;
+        [SerializeField] private GameObject monsterPoolParent; // 用於管理怪物池的父級物件
+
         private MonsterPool[] monsterPools;
-        [SerializeField] private GameObject projectilePoolParent;
+        [SerializeField] private GameObject projectilePoolParent;//用於管理射擊物體池的父級物件
         private List<ProjectilePool> projectilePools;
         private Dictionary<GameObject, int> projectileIndexByPrefab;
-        [SerializeField] private GameObject throwablePoolParent;
+        [SerializeField] private GameObject throwablePoolParent;//用於管理投擲物體池的父級物件
         private List<ThrowablePool> throwablePools;
         private Dictionary<GameObject, int> throwableIndexByPrefab;
-        [SerializeField] private GameObject boomerangPoolParent;
+        [SerializeField] private GameObject boomerangPoolParent;//用於管理旋風物體池的父級物件
         private List<BoomerangPool> boomerangPools;
         private Dictionary<GameObject, int> boomerangIndexByPrefab;
-        [SerializeField] private GameObject expGemPrefab;
-        [SerializeField] private ExpGemPool expGemPool;
-        [SerializeField] private GameObject coinPrefab;
-        [SerializeField] private CoinPool coinPool;
-        [SerializeField] private GameObject chestPrefab;
-        [SerializeField] private ChestPool chestPool;
-        [SerializeField] private GameObject textPrefab;
-        [SerializeField] private DamageTextPool textPool;
+        [SerializeField] private GameObject expGemPrefab;//經驗寶石預製體
+        [SerializeField] private ExpGemPool expGemPool;//經驗寶石池
+        [SerializeField] private GameObject coinPrefab;//硬幣預製體
+        [SerializeField] private CoinPool coinPool;//硬幣池
+        [SerializeField] private GameObject chestPrefab;//寶箱預製體
+        [SerializeField] private ChestPool chestPool;//寶箱池
+        [SerializeField] private GameObject textPrefab;//傷害文本預製體
+        [SerializeField] private DamageTextPool textPool;//傷害文本池
         [Header("Spatial Hash Grid Settings")]
-        [SerializeField] private Vector2 gridSize;
-        [SerializeField] private Vector2Int gridDimensions;
+        [SerializeField] private Vector2 gridSize;//網格大小
+        [SerializeField] private Vector2Int gridDimensions;//網格維度
         [Header("Dependencies")]
-        [SerializeField] private SpriteRenderer flashSpriteRenderer;
-        [SerializeField] private Camera playerCamera;  // 攝像頭
-        private Character playerCharacter;  // 玩家的角色
-        private StatsManager statsManager;
-        private Inventory inventory;
-        private InfiniteBackground infiniteBackground;
-        private FastList<Monster> livingMonsters;
-        private FastList<Collectable> magneticCollectables;
+        [SerializeField] private SpriteRenderer flashSpriteRenderer;//閃爍的SpriteRenderer
+        [SerializeField] private Camera playerCamera;//攝像頭
+        private Character playerCharacter;//玩家的角色
+        private StatsManager statsManager;//統計管理器
+        private Inventory inventory;//庫存
+        private InfiniteBackground infiniteBackground;//無限背景
+        private FastList<Monster> livingMonsters;//存活怪物列表
+        private FastList<Collectable> magneticCollectables;//磁性收集物列表
         public FastList<Chest> chests; 
-        private float timeSinceLastMonsterSpawned;
-        private float timeSinceLastChestSpawned;
-        private float screenWidthWorldSpace, screenHeightWorldSpace, screenDiagonalWorldSpace;
-        private float minSpawnDistance;
-        private Coroutine flashCoroutine;
-        private Coroutine shockwave;
-        private SpatialHashGrid grid;
-        public FastList<Monster> LivingMonsters { get => livingMonsters; }
-        public FastList<Collectable> MagneticCollectables { get => magneticCollectables; }
-        public Inventory Inventory { get => inventory; }
-        public AbilitySelectionDialog AbilitySelectionDialog { get; private set; }
-        public SpatialHashGrid Grid { get => grid; }
+        private float timeSinceLastMonsterSpawned;//上次生成怪物以來的時間
+        private float timeSinceLastChestSpawned;//上次生成寶箱以來的時間
+        private float screenWidthWorldSpace, screenHeightWorldSpace, screenDiagonalWorldSpace;//屏幕寬度、高度和對角線寬度
+        private float minSpawnDistance;//最小生成距離
+        private Coroutine flashCoroutine;//閃爍的協程
+        private Coroutine shockwave;//衝擊波
+        private SpatialHashGrid grid;//網格
+        public FastList<Monster> LivingMonsters { get => livingMonsters; }//存活怪物列表
+        public FastList<Collectable> MagneticCollectables { get => magneticCollectables; }//磁性收集物列表
+        public Inventory Inventory { get => inventory; }//庫存
+        public AbilitySelectionDialog AbilitySelectionDialog { get; private set; }//能力選擇對話框
+        public SpatialHashGrid Grid { get => grid; }//網格
 
         public void Init(LevelBlueprint levelBlueprint, Character character, Inventory inventory, StatsManager statsManager, InfiniteBackground infiniteBackground, AbilitySelectionDialog abilitySelectionDialog)
         {

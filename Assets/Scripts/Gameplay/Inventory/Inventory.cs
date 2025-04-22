@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：背包，可以存放收集品
 namespace Vampire
 {
     public class Inventory : MonoBehaviour

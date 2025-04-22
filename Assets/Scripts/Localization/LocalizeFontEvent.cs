@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
-
+//用途：本地化字體事件，可以本地化字體
 namespace Vampire
 {
     [Serializable]

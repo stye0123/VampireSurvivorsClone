@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：角色藍圖，可以生成角色
 namespace Vampire
 {
     [CreateAssetMenu(fileName = "Character", menuName = "Blueprints/Character", order = 1)]

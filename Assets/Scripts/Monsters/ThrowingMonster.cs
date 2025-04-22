@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：投擲怪物，可以投擲物品
 namespace Vampire
 {
     public class ThrowingMonster : Monster

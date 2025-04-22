@@ -7,6 +7,8 @@ using UnityEngine.Localization;
 
 namespace Vampire
 {
+    // 角色卡片顯示
+    // 應該是一整組UI容器的樣板
     public class CharacterCard : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI nameText;
@@ -31,11 +33,13 @@ namespace Vampire
 
         private void OnEnable()
         {
+            // 註冊買賣按鈕的文字改變事件
             buyLocalization.StringChanged += UpdateButtonText;
         }
 
         private void OnDisable()
         {
+            // 取消註冊買賣按鈕的文字改變事件
             buyLocalization.StringChanged -= UpdateButtonText;
         }
 

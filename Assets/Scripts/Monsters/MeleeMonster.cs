@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：近戰怪物，可以近戰攻擊
 namespace Vampire
 {
     public class MeleeMonster : Monster

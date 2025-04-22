@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：機槍技能，可以射擊機槍
 namespace Vampire
 {
     public class MachineGunAbility : GunAbility

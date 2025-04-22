@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：槍械技能，可以射擊槍械
 namespace Vampire
 {
     public class GunAbility : ProjectileAbility

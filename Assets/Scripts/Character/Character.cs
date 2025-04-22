@@ -4,6 +4,15 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections.Generic;
+//用途：玩家角色，可以移動、攻擊、升級、死亡
+//使用方法：
+//1. 在Inspector中設定好相關的UI元素
+//2. 在Inspector中設定好相關的參數
+//3. 在Inspector中設定好相關的特效
+//4. 在Inspector中設定好相關的碰撞器
+//5. 在Inspector中設定好相關的Rigidbody2D
+//6. 在Inspector中設定好相關的SpriteRenderer    
+//7. 在Inspector中設定好相關的SpriteAnimator
 
 namespace Vampire
 {

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+//用途：大蒜技能，可以攻擊怪物
 
 namespace Vampire
 {

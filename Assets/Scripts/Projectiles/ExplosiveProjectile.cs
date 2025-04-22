@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：爆炸性投射物，可以爆炸
 namespace Vampire
 {
     public class ExplosiveProjectile : Projectile

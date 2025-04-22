@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+//用途：背包槽，可以存放收集品
 namespace Vampire
 {
     public class InventorySlot : MonoBehaviour

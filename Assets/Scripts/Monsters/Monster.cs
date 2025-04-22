@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+//用途：怪物，可以怪物
 namespace Vampire
 {
     [RequireComponent(typeof(Rigidbody2D))]

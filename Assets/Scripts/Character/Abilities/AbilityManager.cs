@@ -2,6 +2,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//用途：技能管理器，可以管理技能、升級技能
 
 namespace Vampire
 {

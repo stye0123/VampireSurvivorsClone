@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：手榴彈老闆能力，可以投擲手榴彈
 namespace Vampire
 {
     public class GrenadeBossAbility : BossAbility

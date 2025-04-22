@@ -1,5 +1,7 @@
 
 using UnityEngine;
+//用途：浮點數升級技能，可以升級浮點數
+
 
 namespace Vampire
 {

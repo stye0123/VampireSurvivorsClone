@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
-
+//用途：老闆怪物，可以老闆怪物
 namespace Vampire
 {
     public class BossMonster : Monster

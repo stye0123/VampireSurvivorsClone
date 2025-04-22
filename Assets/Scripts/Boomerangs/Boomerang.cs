@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+//用途：投擲型武器，可以投擲到指定位置，並在指定時間內返回
+
 
 namespace Vampire
 {

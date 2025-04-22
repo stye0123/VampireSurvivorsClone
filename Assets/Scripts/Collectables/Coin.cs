@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：硬幣，可以收集
 namespace Vampire
 {
     public enum CoinType 

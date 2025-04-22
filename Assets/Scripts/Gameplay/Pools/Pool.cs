@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：池，可以生成物體
 namespace Vampire
 {
     public class Pool : MonoBehaviour

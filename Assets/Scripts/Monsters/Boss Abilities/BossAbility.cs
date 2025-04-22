@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：老闆能力，可以老闆能力
 namespace Vampire
 {
     public abstract class BossAbility : MonoBehaviour

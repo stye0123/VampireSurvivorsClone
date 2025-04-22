@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//用途：關卡管理器，可以管理關卡
 namespace Vampire
 {
     public class LevelManager : MonoBehaviour

@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：可拋擲物體池，可以生成可拋擲物體
 namespace Vampire
 {
     public class ThrowablePool : Pool

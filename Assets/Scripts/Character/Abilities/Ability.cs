@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
+//用途：技能，可以升級、使用
 
 namespace Vampire
 {

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-
+//用途：傷害文字，可以顯示傷害文字
 namespace Vampire
 {
     public class DamageText : MonoBehaviour

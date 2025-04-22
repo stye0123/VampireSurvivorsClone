@@ -1,4 +1,5 @@
 #if UNITY_EDITOR
+//用途：字符集生成器
 
 using System.Collections.Generic;
 using System.IO;

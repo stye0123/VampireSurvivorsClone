@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：老闆怪物藍圖，可以生成老闆怪物
 namespace Vampire
 {
     [CreateAssetMenu(fileName = "Boss Monster", menuName = "Blueprints/Monsters/Boss Monster", order = 1)]

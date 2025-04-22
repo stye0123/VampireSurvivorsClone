@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
-
+//用途：計分器，可以計分
 namespace Vampire
 {
     public class PointBar : MonoBehaviour

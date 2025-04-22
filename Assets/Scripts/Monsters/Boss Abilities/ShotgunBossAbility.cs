@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：散彈槍老闆能力，可以射出散彈槍
 namespace Vampire
 {
     public class ShotgunBossAbility : BossAbility

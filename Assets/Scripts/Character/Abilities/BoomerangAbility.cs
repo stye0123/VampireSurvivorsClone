@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//用途：投擲型武器技能，可以投擲投擲型武器
 
 namespace Vampire
 {

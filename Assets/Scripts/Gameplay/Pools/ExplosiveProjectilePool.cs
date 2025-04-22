@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：爆炸性投射物池，可以生成爆炸性投射物
 namespace Vampire
 {
     public class ExplosiveProjectilePool : Pool

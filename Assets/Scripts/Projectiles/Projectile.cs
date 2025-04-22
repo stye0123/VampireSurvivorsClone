@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
-
+//用途：投射物，可以投射
 namespace Vampire
 {
     public class Projectile : MonoBehaviour

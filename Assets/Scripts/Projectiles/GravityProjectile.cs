@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：重力投射物，可以重力
 namespace Vampire
 {
     public class GravityProjectile : Projectile

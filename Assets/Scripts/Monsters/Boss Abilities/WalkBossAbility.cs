@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Linq;
 using System.Collections;
 using UnityEngine;
-
+//用途：走路老闆能力，可以走路
 namespace Vampire
 {
     public class WalkBossAbility : BossAbility

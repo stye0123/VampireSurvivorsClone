@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：頁面管理器，可以管理頁面
 namespace Vampire
 {
     public class PageManager : MonoBehaviour

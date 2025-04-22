@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
-
+//用途：能力卡，可以顯示能力
 namespace Vampire
 {
     public class AbilityCard : MonoBehaviour

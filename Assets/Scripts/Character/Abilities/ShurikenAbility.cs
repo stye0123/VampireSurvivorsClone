@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：飛鏢技能，可以射出飛鏢
 namespace Vampire
 {
     public class ShurikenAbility : ProjectileAbility

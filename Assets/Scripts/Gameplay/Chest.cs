@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+//用途：寶箱，可以開啟
 namespace Vampire
 {
     public class Chest : MonoBehaviour

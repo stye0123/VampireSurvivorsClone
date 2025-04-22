@@ -1,6 +1,6 @@
 
 using UnityEngine;
-
+//用途：整數升級技能，可以升級整數
 namespace Vampire
 {
     public class IntUpgradeAbility<T> : Ability where T : UpgradeableInt

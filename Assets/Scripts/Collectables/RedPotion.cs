@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：紅色藥水，可以恢復生命值
 namespace Vampire
 {
     public class RedPotion : Collectable

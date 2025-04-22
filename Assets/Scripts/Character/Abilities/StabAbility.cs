@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：刺擊技能，可以刺擊怪物
 namespace Vampire
 {
     public class StabAbility : MeleeAbility

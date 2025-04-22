@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
-
+//用途：重力投擲物，可以重力投擲
 namespace Vampire
 {
     public class GravityThrowable : Throwable

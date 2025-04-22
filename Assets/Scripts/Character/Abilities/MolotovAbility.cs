@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：莫洛托夫技能，可以投擲莫洛托夫
 namespace Vampire
 {
     public class MolotovAbility : ThrowableAbility

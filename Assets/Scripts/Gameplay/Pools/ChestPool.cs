@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：寶箱池，可以生成寶箱
 namespace Vampire
 {
     public class ChestPool : Pool
@@ -22,10 +22,12 @@ namespace Vampire
         {
             pool.Release(chest);
         }
-
+        //創建寶箱
         protected Chest CreatePooledItem()
         {
+            //實例化寶箱
             Chest chest = Instantiate(prefab, transform).GetComponent<Chest>();
+            //初始化寶箱
             chest.Init(entityManager, playerCharacter, transform);
             return chest;
         }

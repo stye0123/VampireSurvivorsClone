@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//用途：書本技能，可以攻擊怪物
 
 namespace Vampire
 {

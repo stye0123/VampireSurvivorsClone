@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：能力選擇對話框，可以選擇能力
 namespace Vampire
 {
     public class AbilitySelectionDialog : DialogBox

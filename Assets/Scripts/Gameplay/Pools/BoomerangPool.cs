@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：投擲型武器池，可以生成投擲型武器
 namespace Vampire
 {
     public class BoomerangPool : Pool

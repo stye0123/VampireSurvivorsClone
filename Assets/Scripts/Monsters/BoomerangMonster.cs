@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：投擲型怪物，可以投擲飛鏢
 namespace Vampire
 {
     public class BoomerangMonster : Monster

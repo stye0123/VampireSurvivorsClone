@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：對話框，可以對話
 namespace Vampire
 {
     public class DialogBox : MonoBehaviour

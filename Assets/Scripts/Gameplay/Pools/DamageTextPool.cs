@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：傷害文字池，可以生成傷害文字
 namespace Vampire
 {
     public class DamageTextPool : Pool

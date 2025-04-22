@@ -1,6 +1,6 @@
 using UnityEngine;
 using Vampire;
-
+//用途：雜項測試，可以測試雜項
 public class MiscTesting : MonoBehaviour
 {
     [SerializeField] private PointBar healthBar, expBar;

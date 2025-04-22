@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：子彈地獄老闆能力，可以射出子彈
 namespace Vampire
 {
     public class BulletHellBossAbility : BossAbility

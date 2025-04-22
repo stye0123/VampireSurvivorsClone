@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：收集品，可以收集
 namespace Vampire
 {
     public abstract class Collectable : MonoBehaviour

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
-
+//用途：地區下拉式選單，可以選擇地區
 namespace Vampire
 {
     public class LocaleDropdown : MonoBehaviour

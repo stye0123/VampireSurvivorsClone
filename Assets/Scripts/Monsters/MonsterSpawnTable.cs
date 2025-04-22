@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：怪物生成表，可以生成怪物
 namespace Vampire
 {
     [System.Serializable]

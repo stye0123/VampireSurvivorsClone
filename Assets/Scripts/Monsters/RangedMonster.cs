@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：遠程怪物，可以遠程攻擊
 namespace Vampire
 {
     public class RangedMonster : Monster

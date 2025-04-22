@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：經驗寶石，可以收集
 namespace Vampire
 {
     public enum GemType 

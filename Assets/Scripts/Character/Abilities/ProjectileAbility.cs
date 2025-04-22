@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：投射物技能，可以射出投射物
 namespace Vampire
 {
     public class ProjectileAbility : Ability

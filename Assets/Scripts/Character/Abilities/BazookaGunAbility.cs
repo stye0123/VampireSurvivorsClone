@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//用途：狙擊槍技能，可以射擊狙擊槍
 
 namespace Vampire
 {

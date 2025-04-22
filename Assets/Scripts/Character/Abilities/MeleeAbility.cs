@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//用途：近戰技能，可以攻擊怪物
 namespace Vampire
 {
     public abstract class MeleeAbility : Ability

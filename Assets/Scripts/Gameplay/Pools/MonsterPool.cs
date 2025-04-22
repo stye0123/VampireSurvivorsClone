@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：怪物池，可以生成怪物
 namespace Vampire
 {
     public class MonsterPool : Pool

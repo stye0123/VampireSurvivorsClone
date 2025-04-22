@@ -3,7 +3,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.InputSystem.OnScreen;
 using UnityEngine.InputSystem.Layouts;
-
+//用途：觸控式搖桿，可以控制角色移動
+//使用方法：
+//1. 在Inspector中設定好相關的UI元素
+//2. 在Inspector中設定好相關的參數
+//3. 在Inspector中設定好相關的特效
+//4. 在Inspector中設定好相關的碰撞器
+//5. 在Inspector中設定好相關的Rigidbody2D   
 namespace Vampire
 {
     /// <summary>

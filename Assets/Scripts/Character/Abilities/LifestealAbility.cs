@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+//用途：吸血技能，可以吸血
 
 namespace Vampire
 {

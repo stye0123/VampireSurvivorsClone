@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+//用途：遊戲計時器，可以顯示遊戲時間
 namespace Vampire
 {
     [RequireComponent(typeof(TextMeshProUGUI))]

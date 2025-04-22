@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//用途：匕首技能，可以攻擊怪物
 namespace Vampire
 {
     public class DaggerAbility : StabAbility
@@ -17,7 +17,7 @@ namespace Vampire
             Coroutine monsterBleed = StartCoroutine(BleedMonster(monster));
             monster.OnKilled.AddListener( delegate { StopMonsterBleed(monsterBleed); } );
         }
-
+        
         protected IEnumerator BleedMonster(Monster monster)
         {
             float bleedDelay = 1/bleedRate.Value;

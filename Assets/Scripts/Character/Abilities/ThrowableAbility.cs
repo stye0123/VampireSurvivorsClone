@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：投擲型武器技能，可以投擲投擲型武器
 namespace Vampire
 {
     public class ThrowableAbility : Ability

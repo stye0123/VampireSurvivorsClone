@@ -1,6 +1,6 @@
 using UnityEngine.Pool;
 using UnityEngine;
-
+//用途：硬幣池，可以生成硬幣
 namespace Vampire
 {
     public class CoinPool : Pool

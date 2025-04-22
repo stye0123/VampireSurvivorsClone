@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+//用途：恢復技能，可以恢復生命值
 namespace Vampire
 {
     public class RecoveryAbility : Ability
