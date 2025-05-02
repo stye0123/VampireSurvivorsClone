@@ -23,8 +23,11 @@ namespace Vampire
 
         protected override void Awake()
         {
+            //下面這行是繼承Collectable的Awake方法
             base.Awake();
+            //下面這行是獲取TrailRenderer組件
             trailRenderer = GetComponent<TrailRenderer>();
+            //下面這行是獲取SpriteRenderer組件
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
 
